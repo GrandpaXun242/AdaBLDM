@@ -1,0 +1,76 @@
+Select imgs of contamination:
+007.png
+005.png
+017.png
+002.png
+009.png
+008.png
+014.png
+016.png
+003.png
+018.png
+Select imgs of pill_type:
+003.png
+002.png
+006.png
+004.png
+005.png
+008.png
+000.png
+001.png
+007.png
+Select imgs of faulty_imprint:
+004.png
+007.png
+011.png
+013.png
+018.png
+005.png
+008.png
+006.png
+009.png
+016.png
+Select imgs of scratch:
+011.png
+005.png
+022.png
+010.png
+015.png
+020.png
+016.png
+017.png
+013.png
+009.png
+Select imgs of crack:
+023.png
+021.png
+015.png
+010.png
+024.png
+011.png
+009.png
+012.png
+025.png
+014.png
+Select imgs of color:
+022.png
+010.png
+016.png
+001.png
+014.png
+008.png
+013.png
+018.png
+015.png
+021.png
+Select imgs of combined:
+008.png
+013.png
+016.png
+003.png
+014.png
+007.png
+015.png
+010.png
+011.png
+005.png

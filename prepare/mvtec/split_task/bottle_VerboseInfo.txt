@@ -1,0 +1,33 @@
+Select imgs of contamination:
+000.png
+010.png
+003.png
+019.png
+016.png
+009.png
+014.png
+017.png
+020.png
+015.png
+Select imgs of broken_large:
+013.png
+016.png
+007.png
+018.png
+008.png
+010.png
+009.png
+004.png
+017.png
+011.png
+Select imgs of broken_small:
+018.png
+007.png
+000.png
+009.png
+005.png
+010.png
+013.png
+002.png
+021.png
+004.png

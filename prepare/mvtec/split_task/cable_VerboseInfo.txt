@@ -1,0 +1,88 @@
+Select imgs of missing_wire:
+001.png
+000.png
+009.png
+003.png
+004.png
+008.png
+007.png
+002.png
+005.png
+006.png
+Select imgs of cut_inner_insulation:
+001.png
+011.png
+012.png
+006.png
+002.png
+000.png
+009.png
+013.png
+008.png
+004.png
+Select imgs of missing_cable:
+001.png
+007.png
+008.png
+000.png
+006.png
+005.png
+003.png
+011.png
+009.png
+004.png
+Select imgs of cable_swap:
+004.png
+000.png
+009.png
+007.png
+010.png
+011.png
+008.png
+002.png
+003.png
+005.png
+Select imgs of cut_outer_insulation:
+003.png
+006.png
+008.png
+005.png
+000.png
+007.png
+002.png
+004.png
+009.png
+001.png
+Select imgs of poke_insulation:
+002.png
+001.png
+005.png
+007.png
+006.png
+000.png
+008.png
+009.png
+004.png
+003.png
+Select imgs of bent_wire:
+003.png
+002.png
+004.png
+008.png
+012.png
+011.png
+001.png
+007.png
+010.png
+000.png
+Select imgs of combined:
+008.png
+000.png
+002.png
+001.png
+010.png
+003.png
+006.png
+004.png
+009.png
+007.png

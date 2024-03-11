@@ -1,0 +1,44 @@
+Select imgs of bent_lead:
+005.png
+002.png
+000.png
+001.png
+006.png
+003.png
+007.png
+004.png
+008.png
+009.png
+Select imgs of misplaced:
+004.png
+000.png
+006.png
+003.png
+001.png
+008.png
+005.png
+007.png
+009.png
+002.png
+Select imgs of cut_lead:
+000.png
+009.png
+007.png
+006.png
+005.png
+008.png
+003.png
+001.png
+002.png
+004.png
+Select imgs of damaged_case:
+006.png
+005.png
+002.png
+009.png
+008.png
+003.png
+000.png
+007.png
+001.png
+004.png

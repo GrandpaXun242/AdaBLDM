@@ -1,0 +1,53 @@
+Select imgs of hole:
+007.png
+002.png
+006.png
+008.png
+001.png
+003.png
+005.png
+009.png
+004.png
+000.png
+Select imgs of scratch:
+017.png
+007.png
+011.png
+008.png
+009.png
+005.png
+004.png
+013.png
+010.png
+000.png
+Select imgs of liquid:
+006.png
+008.png
+007.png
+000.png
+002.png
+003.png
+009.png
+001.png
+005.png
+004.png
+Select imgs of color:
+003.png
+002.png
+007.png
+004.png
+000.png
+001.png
+006.png
+005.png
+Select imgs of combined:
+010.png
+005.png
+006.png
+003.png
+008.png
+001.png
+009.png
+000.png
+007.png
+002.png

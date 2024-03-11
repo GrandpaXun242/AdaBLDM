@@ -1,0 +1,55 @@
+Select imgs of cut:
+005.png
+009.png
+014.png
+002.png
+004.png
+010.png
+007.png
+008.png
+015.png
+011.png
+Select imgs of hole:
+012.png
+004.png
+003.png
+014.png
+008.png
+000.png
+011.png
+010.png
+015.png
+016.png
+Select imgs of thread:
+006.png
+000.png
+011.png
+017.png
+015.png
+005.png
+003.png
+013.png
+008.png
+016.png
+Select imgs of metal_contamination:
+004.png
+002.png
+008.png
+005.png
+016.png
+000.png
+011.png
+012.png
+013.png
+014.png
+Select imgs of color:
+004.png
+015.png
+009.png
+002.png
+008.png
+005.png
+001.png
+018.png
+007.png
+010.png

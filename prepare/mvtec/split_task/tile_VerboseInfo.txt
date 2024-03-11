@@ -1,0 +1,55 @@
+Select imgs of crack:
+003.png
+012.png
+014.png
+001.png
+010.png
+008.png
+005.png
+015.png
+004.png
+009.png
+Select imgs of rough:
+004.png
+013.png
+003.png
+008.png
+011.png
+009.png
+014.png
+010.png
+005.png
+001.png
+Select imgs of gray_stroke:
+008.png
+012.png
+005.png
+006.png
+000.png
+001.png
+014.png
+007.png
+009.png
+015.png
+Select imgs of oil:
+003.png
+004.png
+005.png
+002.png
+017.png
+009.png
+006.png
+001.png
+016.png
+013.png
+Select imgs of glue_strip:
+014.png
+010.png
+013.png
+008.png
+000.png
+016.png
+012.png
+005.png
+002.png
+007.png

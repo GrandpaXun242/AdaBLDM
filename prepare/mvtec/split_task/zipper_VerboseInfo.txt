@@ -1,0 +1,77 @@
+Select imgs of squeezed_teeth:
+010.png
+000.png
+004.png
+003.png
+014.png
+006.png
+007.png
+005.png
+013.png
+002.png
+Select imgs of split_teeth:
+008.png
+000.png
+013.png
+002.png
+014.png
+017.png
+003.png
+004.png
+010.png
+001.png
+Select imgs of broken_teeth:
+017.png
+001.png
+018.png
+005.png
+003.png
+007.png
+009.png
+004.png
+011.png
+012.png
+Select imgs of fabric_interior:
+009.png
+004.png
+000.png
+003.png
+012.png
+011.png
+006.png
+014.png
+008.png
+002.png
+Select imgs of fabric_border:
+015.png
+001.png
+003.png
+016.png
+004.png
+013.png
+006.png
+014.png
+005.png
+011.png
+Select imgs of rough:
+011.png
+014.png
+009.png
+015.png
+013.png
+012.png
+008.png
+006.png
+001.png
+003.png
+Select imgs of combined:
+003.png
+005.png
+010.png
+004.png
+011.png
+009.png
+007.png
+001.png
+002.png
+013.png

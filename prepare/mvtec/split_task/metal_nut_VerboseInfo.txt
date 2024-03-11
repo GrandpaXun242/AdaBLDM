@@ -1,0 +1,44 @@
+Select imgs of scratch:
+005.png
+003.png
+006.png
+009.png
+018.png
+000.png
+010.png
+021.png
+013.png
+011.png
+Select imgs of bent:
+008.png
+019.png
+023.png
+012.png
+001.png
+016.png
+014.png
+020.png
+013.png
+017.png
+Select imgs of flip:
+015.png
+012.png
+014.png
+003.png
+020.png
+022.png
+008.png
+004.png
+021.png
+018.png
+Select imgs of color:
+016.png
+013.png
+017.png
+008.png
+014.png
+015.png
+012.png
+010.png
+011.png
+020.png

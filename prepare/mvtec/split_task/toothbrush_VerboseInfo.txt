@@ -1,0 +1,11 @@
+Select imgs of defective:
+011.png
+021.png
+000.png
+015.png
+022.png
+003.png
+007.png
+006.png
+017.png
+018.png

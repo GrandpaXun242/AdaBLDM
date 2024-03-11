@@ -1,0 +1,55 @@
+Select imgs of cut:
+017.png
+003.png
+001.png
+005.png
+008.png
+009.png
+000.png
+007.png
+014.png
+012.png
+Select imgs of fold:
+014.png
+005.png
+008.png
+002.png
+012.png
+006.png
+015.png
+000.png
+011.png
+007.png
+Select imgs of glue:
+007.png
+008.png
+014.png
+004.png
+010.png
+017.png
+013.png
+018.png
+011.png
+001.png
+Select imgs of poke:
+006.png
+009.png
+001.png
+000.png
+011.png
+004.png
+008.png
+012.png
+002.png
+010.png
+Select imgs of color:
+009.png
+003.png
+008.png
+011.png
+002.png
+015.png
+017.png
+001.png
+000.png
+005.png

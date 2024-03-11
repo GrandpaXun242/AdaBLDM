@@ -1,0 +1,55 @@
+Select imgs of faulty_imprint:
+014.png
+008.png
+001.png
+010.png
+018.png
+020.png
+015.png
+004.png
+007.png
+005.png
+Select imgs of scratch:
+017.png
+014.png
+011.png
+012.png
+019.png
+005.png
+002.png
+020.png
+016.png
+007.png
+Select imgs of squeeze:
+004.png
+002.png
+017.png
+011.png
+016.png
+012.png
+014.png
+001.png
+000.png
+003.png
+Select imgs of crack:
+015.png
+002.png
+018.png
+007.png
+008.png
+019.png
+014.png
+006.png
+003.png
+016.png
+Select imgs of poke:
+015.png
+016.png
+018.png
+019.png
+007.png
+012.png
+011.png
+017.png
+006.png
+010.png

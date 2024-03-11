@@ -1,0 +1,44 @@
+Select imgs of cut:
+002.png
+004.png
+014.png
+000.png
+001.png
+015.png
+010.png
+007.png
+011.png
+009.png
+Select imgs of hole:
+008.png
+003.png
+009.png
+004.png
+000.png
+007.png
+010.png
+014.png
+013.png
+016.png
+Select imgs of crack:
+008.png
+001.png
+012.png
+014.png
+009.png
+017.png
+011.png
+013.png
+010.png
+006.png
+Select imgs of print:
+008.png
+010.png
+015.png
+014.png
+013.png
+001.png
+006.png
+004.png
+007.png
+005.png
