@@ -1,9 +1,8 @@
-from futils import FeaturesCollector, load_ckpt
+from futils import FeaturesCollector
 from timm.models import densenet
 from torchvision.models import efficientnet
 from torchvision.models import mobilenet
 from torchvision.models import resnet
-from torchvision.models.feature_extraction import create_feature_extractor
 from typing import List, Dict, Union, Tuple
 import torch
 import torch.nn as nn
@@ -50,13 +49,6 @@ class Mixed_5b(nn.Module):
 
 class BaseModel(nn.Module):
     def __init__(self, output_dim: int = 384, backbone_name: str = 'densenet201', pretrained: bool = True, freeze_pre_bn: bool = False, layers: List[str] = ['features.denseblock1', 'features.denseblock2']):
-        """
-        Args:
-            backbone_name (str, optional): backbone. Defaults to 'densenet201'.
-            pretrained (bool, optional): 是否加载预训练模型. Defaults to True.
-            freeze_pre_bn (bool, optional): 是否冻结之前的所有bn层. Defaults to False.
-            layers (List[str], optional): 使用的特征层
-        """  
         super().__init__()
         self.backbone_name = backbone_name
         self.pretrained = pretrained
@@ -79,14 +71,12 @@ class BaseModel(nn.Module):
         })
     
     def freeze(self):
-        """冻结当前为止之前的所有网络层
-        """        
         self.requires_grad_(False)
         self.freeze_modules = [m for m in self.children()]
         
     def train(self, mode: bool = True):
         super().train(mode)
-        if self.freeze_pre_bn:  # 固定batchnorm和dropout层
+        if self.freeze_pre_bn:  
             for m in self.freeze_modules:
                 m.eval()
     

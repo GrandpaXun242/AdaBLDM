@@ -61,7 +61,6 @@ for classname in CLASS_NAMES:
             features = features_d[foreground_layer]  # b x 512 x h x w
             lda_predict_norm = foreground_predictor.transform(features)
             lda_predict_norm = lda_predict_norm.cpu().numpy()
-            # 保存
             cur_save_dir = os.path.dirname(os.path.join(cur_classname_output_dir, k))
             os.makedirs(cur_save_dir, exist_ok=True)
             cur_image_name = os.path.basename(k).split('.', 1)[0]

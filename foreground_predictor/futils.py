@@ -10,6 +10,8 @@ import torch
 import torch.nn.functional as F
 import torchvision.transforms as transforms
 
+import torch.nn as nn
+from typing import List, Tuple, Dict, Sequence
 
 DATASET_INFOS = {
     'mvtec': [
@@ -230,3 +232,60 @@ class ForegroundPredictor:
             )
         ).reshape(features.shape[2], features.shape[3])
 
+class LastLayerToExtractReachedException(Exception):
+    pass
+class ForwardHook:
+    def __init__(self, hook_dict, layer_name: str, stop_length: int = -1):
+        self.hook_dict = hook_dict
+        self.layer_name = layer_name
+        self.stop_length = stop_length
+
+    @torch.no_grad()
+    def __call__(self, module, input, output):
+        self.hook_dict[self.layer_name] = output.detach()
+        if self.stop_length > 0 and len(self.hook_dict) >= self.stop_length:
+            raise LastLayerToExtractReachedException()
+
+class FeaturesCollector:
+    def __init__(
+        self,
+        backbone: nn.Module,
+        layers: List[str] = ['layer2'],
+        interrupt: bool = True,
+    ) -> None:
+        self.backbone = backbone
+        self.interrupt = interrupt
+        self._features_d = {}
+        self.removable_handles = []
+        for layer in layers:
+            forward_hook = ForwardHook(
+                self._features_d, layer, -1 if not self.interrupt else len(layers)
+            )
+            network_layer = backbone
+            while "." in layer:
+                extract_block, layer = layer.split(".", 1)
+                network_layer = network_layer.__dict__["_modules"][extract_block]
+            network_layer = network_layer.__dict__["_modules"][layer]
+            if isinstance(network_layer, torch.nn.Sequential):
+                self.removable_handles.append(
+                    network_layer[-1].register_forward_hook(forward_hook)
+                )
+            elif isinstance(network_layer, torch.nn.Module):
+                self.removable_handles.append(
+                    network_layer.register_forward_hook(forward_hook)
+                )
+
+    @torch.no_grad()
+    def __call__(self, x):
+        try:
+            self.backbone(x)
+        except LastLayerToExtractReachedException:
+            pass
+        try:
+            return self._features_d.copy()
+        finally:
+            self._features_d.clear()
+
+    def __del__(self):
+        for handle in self.removable_handles:
+            handle.remove()
