@@ -3,6 +3,8 @@ The implement for paper : "A Novel Approach to Industrial Defect Generation thro
 
 [Arxiv Link](https://arxiv.org/abs/2402.19330)
 
+# News!
+**2024/04/25** : Update the training code!  :blush:
 
 
 
@@ -14,6 +16,9 @@ The implement for paper : "A Novel Approach to Industrial Defect Generation thro
     >
     >**Preprocess code in** [this](./prepare).
 
+## Env Install
+We follows [ControlNet](https://github.com/lllyasviel/ControlNet/blob/main/README.md?plain=1#L63-L64).
+
 ## Prepare
 > Build trainset for AdaBLDM training. 
 
@@ -24,7 +29,31 @@ The implement for paper : "A Novel Approach to Industrial Defect Generation thro
 **KSDD** in [this](./prepare/btad/readme.md).
 
 ## Train
-Coming soon....
+> Mvtec-AD Part
+0. Download Mvtec-AD dataset.
+1. **Foreground_predictor** : [Look this](./foreground_predictor//Tutorial.md)
+2. **Prepare for mvtec dataset** : [Look this](./prepare/mvtec//readme.md)
+3. **Download SD model** : download ["v1-5-pruned.ckpt"](https://huggingface.co/runwayml/stable-diffusion-v1-5/tree/main). And put it on the directory named "./models".
+4. **Convert weight of sd model** : 
+   ```python
+   python tool_add_control.py ./models/v1-5-pruned.ckpt ./models/control_sd15_ini.ckpt
+   ```
+5. **Config training setting** : [Look this](./config.py)
+6. **Start to train a AdaBLDM**:
+    ```python
+    # default : train a hazelnut with hole.
+    python train.py
+    ```
+
+## Test
+0. **Input the model checkpoint** :  in [test.py line 35](./test.py).
+1. **Run code**:
+    ```python
+    # default : test with hazelnut with hole.
+    python test.py
+    ```
+
+
 
 ## Stable Diffusion 
 
@@ -62,6 +91,17 @@ Few-Shot Defect Image Generation via Defect-Aware Feature Manipulation
 **Image quality (following DFMGAN)**
 1. KID
 2. LPIPS
+## Acknowledgement
+[ForegroundPredictor](https://github.com/flyinghu123/CPR)
+
+[ControlNet](https://github.com/lllyasviel/ControlNet)
+
+[LatentDiffusion](https://github.com/CompVis/latent-diffusion)
+
+[StableDiffusion](https://github.com/CompVis/stable-diffusion)
+
+
+
 
 ## Citation
 ```shell
